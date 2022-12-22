@@ -15,9 +15,6 @@ function Header() {
         <HeaderContainer>
             {/* Header Left */}
             <HeaderLeft>
-              <HeaderAvatar onClick={() => auth.signOut()} alt={user?.displayName}
-              src={user?.photoURL}
-              />
               <AccessTimeIcon/>
             </HeaderLeft>
             {/* Header Search */}
@@ -28,6 +25,9 @@ function Header() {
             {/* Header Right */}
               <HeaderRight>
                 <HelpOutline/>
+                <HeaderAvatar onClick={() => auth.signOut()} alt={user?.displayName}
+              src={user?.photoURL}
+              />
               </HeaderRight>
         </HeaderContainer>
     </div>
@@ -56,15 +56,20 @@ const HeaderSearch = styled.div`
   > input::placeholder {
     color: white;
   }
+
+  > input:focus::placeholder {
+  color: transparent;
+}
 `;
 const HeaderRight = styled.div`
   flex: 0.3;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  margin-right: 20px;
 
   > .MuiSvgIcon-root {
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 30px;
   }
 `;
 

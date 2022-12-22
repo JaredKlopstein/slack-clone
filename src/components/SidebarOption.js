@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { db } from '../firebase';
-import { collection, addDoc, getDocs } from "firebase/firestore";
+import { collection, addDoc } from "firebase/firestore";
 import { useDispatch } from 'react-redux';
 import { enterRoom } from '../features/appSlice';
 
@@ -51,7 +51,7 @@ const SidebarOptionContainer = styled.div`
 
     :hover {
         opacity: 0.9;
-        background-color: #340e36;
+        background-color: #2b2b2b;
     }
 
     > h3 {

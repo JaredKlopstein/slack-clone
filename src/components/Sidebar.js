@@ -29,7 +29,7 @@ function Sidebar() {
             <SidebarInfo>
                 <h2>Slack Clone</h2>
                 <h3>
-                    <FiberManualRecordIcon/>
+                    <FiberManualRecordIcon />
                     {user.displayName}
                 </h3>
             </SidebarInfo>
@@ -65,19 +65,19 @@ const SidebarContainer = styled.div`
     color: white;
     background-color: var(--slack-color);
     flex: 0.3;
-    border-top: 1px solid #49274b;
+    border-top: 1px solid #303030;
     max-width: 260px;
     margin-top: 60px;
 
     > hr {
         margin: 10px 0;
-        border: 1px solid #49274b;
+        border: 1px solid #303030;
     }
 `;
 
 const SidebarHeader = styled.div`
     display: flex;
-    border-bottom: 1px solid #49274b;
+    border-bottom: 1px solid #303030;
     padding: 13px;
 
     > .MuiSvgIcon-root {
